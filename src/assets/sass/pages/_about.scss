@@ -1,0 +1,118 @@
+#about{
+	h1{
+		font-size: var(--title_size02);
+	}
+
+	.container-skills{
+		display: flex;
+		row-gap: 2rem;
+		flex-direction: column;
+	
+	}
+	.wrapper-skill{
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--size_rem_2);
+	}
+	.glcontainer-skill{
+		display: flex;
+		gap: var(--size_rem_4);
+		@media screen and (max-width : v.$lg-breakpoint ) {
+			flex-wrap: wrap;
+			}
+	}
+	.element-skill{
+		display: flex;
+		flex-direction: column;
+		background-color: var(--background_color09);
+		padding: var(--size_rem_2);
+		row-gap: var(--size_rem_1);
+		flex-basis: 44%;
+		border-radius: var(--size_rem_05);
+		p{
+			font-size: var(--paragraph_size05);
+		}
+		.element-content{
+			display: flex;
+			flex-direction: column;
+			row-gap: var(--size_rem_2);
+		}
+		.element-span{
+			width:fit-content;
+			span{
+				padding: var(--btn_padding01);
+				border-radius: var(--size_rem_05);
+
+			}
+			.intermediate-span{
+				background-color: var(--background_color10);
+				color: var(--text_color10);
+			}
+			.advanced-span{
+				background-color: var(--background_color11);
+				
+				color: var(--text_color11);
+			}
+		}
+		.svg-wrapper{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: var(--size_rem_4);
+			height: var(--size_rem_4);
+			border-radius: var(--size_rem_1);
+			background-color: var(--background_color01);
+		}
+		.element-title{
+			display: flex;
+			align-items: center;
+			column-gap: var(--size_rem_1);
+		}
+		.element-subtitle{
+			display: flex;
+			column-gap: var(--size_rem_05);
+			p{
+				font-size: var(--paragraph_size04);
+				color : var(--text_color03);
+			}
+		}
+		.element-text{
+			p{
+				font-size: var(--paragraph_size05);
+			}
+		}
+	}
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: var(--size_rem_4);
+		padding-top: var(--size_rem_4);
+		padding-bottom: var(--size_rem_4);
+	}
+	.container-text{
+		display: flex;
+		flex-direction: column;
+		row-gap:var(--size_rem_2);
+		@media screen and (min-width : v.$lg-breakpoint ) {
+			flex-basis: 49%;
+			}
+		p{
+			line-height: var(--lineheight_size01);
+			font-size: var(--paragraph_size05);
+		}
+	}
+
+	.container-image{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		flex-direction: column;
+		@media screen and (min-width : v.$lg-breakpoint ) {
+			flex-basis: 49%;
+			}
+		img{
+			width: calc(22rem + 3vw)
+		}
+	}
+}

@@ -1,0 +1,25 @@
+@keyframes move {
+	to {
+		background-position: 200% center;
+	}
+}
+
+.shining {
+    width: 100%; 
+    background: linear-gradient(90deg , rgb(220, 220, 220) 40%, #ffffff ,rgb(220, 220, 220)60%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 5s infinite linear;
+	animation-delay: 5s;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -200% 0;
+    }
+}

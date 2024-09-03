@@ -1,0 +1,74 @@
+@use "reset";
+@use "variables" as v;
+@import "mixin";
+@import 'keyframes';
+@import "classes";
+@import 'keyframes';
+@import './pages/home';
+@import './pages/about';
+@import './pages/projects';
+
+@import './components/header';
+@import './components/displaymode';
+
+section {
+	min-height: 100vh;
+
+	margin-top: 5rem;
+}
+
+p {
+	color: var(--text_color02);
+}
+
+strong {
+	color: var((--text_color01));
+	font-weight: 500;
+}
+
+.global-container {
+	padding: 0;
+	margin: 0 auto;
+	max-width: 60vw;
+}
+
+.wrapper-title {
+	display: flex;
+	align-items: center;
+	column-gap: var(--size_rem_1);
+}
+
+.btn {
+	padding: 1rem 1.3rem;
+	border-radius: var(--size_rem_1);
+	border: 0;
+	font-size: 1.7rem;
+	color: var(--text_color01);
+	cursor: pointer;
+}
+
+.btn-basic {
+	background-color: var(--background_color03);
+	transition: background 0.2s ease-in-out;
+
+	&:hover,
+	&:active {
+		background-color: var(--hover_btn);
+	}
+
+}
+
+.svg-link {
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		fill,stroke {
+			filter: invert(0.1);
+
+		}
+		path {
+			filter: invert(0.2);
+		}
+	}
+}
