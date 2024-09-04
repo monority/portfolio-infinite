@@ -11,10 +11,10 @@ html {
 }
 
 body {
-	background-color: var(--background_color01);
+	background-color: var(--bg_color01);
 	color: var(--text_color01);
-	margin: 0;
-	padding: 0;
+	margin: var(--stg_zero);
+	padding: var(--stg_zero);
 	font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 	font-size: 1.6rem;
 	font-style: normal;
@@ -45,94 +45,32 @@ h4,
 h5,
 h6,
 p {
-	margin: 0;
-	padding: 0;
+	margin: var(--stg_zero);
+	padding: var(--stg_zero);
 
 }
 
 :root {
-	--text-purple: #b060f1;
-	--text-yellow: #FFFF00;
-	--text-red: #FF0000;
-	--text-blue: #4696ff;
-	--text-green: #25d625;
-	--text-orange: #FFA500;
-	--text-pink: #FFC0CB;
-	--text-brown: #A52A2A;
-	--text-gray: #808080;
-	--text-teal: #008080;
-	--text-indigo: #4B0082;
-	--text-lime: #00FF00;
-	--text-amber: #FFBF00;
-	--text-cyan: #00FFFF;
-	--text-magenta: #FF00FF;
-	--bg-purple: #bc28f794;
-	--bg-yellow: #ffff0086;
-	--bg-red: #FF0000;
-	--bg-blue: #0084ff70;
-	--bg-green: #00800075;
-	--bg-orange: #ffa60067;
-	--bg-pink: #FFC0CB;
-	--bg-brown: #A52A2A;
-	--bg-gray: #808080;
-	--bg-teal: #008080;
-	--bg-indigo: #4B0082;
-	--bg-lime: #00FF00;
-	--bg-amber: #FFBF00;
-	--bg-cyan: #00FFFF;
-	--bg-magenta: #FF00FF;
-}
-
-[data-theme="dark"] {
-	--text_size01: calc(1.3rem + 0.20vw);
-	--title_size01: calc(1.8rem + 0.20vw);
-	--title_size02: calc(2rem + 0.20vw);
-	--title_size03: calc(5rem + 0.20vw);
-	--title_size04: calc(7rem + 0.20vw);
-	--paragraph_size01: calc(0.5rem + 0.20vw);
-	--paragraph_size02: calc(0.75rem + 0.20vw);
-	--paragraph_size03: calc(1rem + 0.20vw);
-	--paragraph_size04: calc(1.25rem + 0.20vw);
-	--paragraph_size05: calc(1.5rem + 0.20vw);
-	--paragraph_size06: calc(1.75rem + 0.20vw);
-	--paragraph_size07: calc(2rem + 0.20vw);
-	--lineheight_size01: 3.3rem;
-	--text_color01: rgb(225, 225, 225);
-	--text_color02: rgb(148 163 184);
-	--text_color03: #6582c2;
-	--text_color04: white;
-	--text_color05: #7599e6;
-	--text_color06: #010202;
-	--text_color07: #eea9cb;
-	--text_color08: rgb(132, 209, 253);
-	--text_color09: #b4eec2;
-	--text_color10: #9fc0f1;
-	--text_color11: #b0ece7;
-	--svg_color01: rgb(240, 43, 43);
-	--hover_color01: #858585;
-	--background_color01: rgb(10, 16, 29);
-	--background_color02: rgb(15, 15, 15);
-	--background_color03: rgba(19, 30, 41, 0.322);
-	--background_color04: rgb(0, 0, 0);
-	--background_color05: rgb(8, 8, 8);
-	--background_color06: rgba(32, 75, 100, 0.568);
-	--background_color07: #96466e62;
-	--background_color08: #84e25f3d;
-	--background_color09: #4045943d;
-	--background_color10: rgba(31, 66, 219, 0.706);
-	--background_color11: rgba(69, 224, 199, 0.582);
-	--border_color01: solid 0.2px #2325317e;
-	--border_color02: 0.5px #7070709c solid;
-	--border_color03: 0.2px #5c5c5c83 solid;
-	--border_color04: 0.5px linear-gradient(90deg, rgba(56, 189, 248, 0) 0%, rgba(56, 189, 248, 0) 0%, rgba(232, 232, 232, 0.2) 33.02%, rgba(143, 143, 143, 0.6719) 64.41%, rgba(236, 72, 153, 0) 98.93%);
-	--border_transparent: transparent;
-	--box_shadow03: 0 10px 15px -3px #aaaaaa1a,
-		0 4px 6px -4px #e0e0e01a;
-	--color_hover03: #6e6e6e;
-	--font_size03: calc(1rem + 0.3vw);
-	--font_family01: "Radio Canada Big", sans-serif;
-	--scrollbar_color: #8e8e8e #ffffff;
-	--btn_padding01: 0.6rem 0.9rem;
+	--text_size01: calc(1rem + 0.2vw);
+	--text_size02: calc(1.2rem + 0.2vw);
+	--text_size03: calc(1.4rem + 0.2vw);
+	--text_size04: calc(1.6rem + 0.2vw);
+	--text_size05: calc(1.8rem + 0.2vw);
+	--text_size06: calc(2rem + 0.2vw);
+	--text_size07: calc(2.2rem + 0.2vw);
+	--text_size08: calc(2.4rem + 0.2vw);
+	--text_size09: calc(2.6rem + 0.2vw);
+	--text_size10: calc(2.8rem + 0.2vw);
+	--title_size01: calc(3rem + 0.2vw);
+	--title_size02: calc(3.5rem + 0.2vw);
+	--title_size03: calc(4rem + 0.2vw);
+	--title_size04: calc(4.5rem + 0.2vw);
+	--title_size05: calc(5rem + 0.2vw);
+	--title_size06: calc(5.5rem + 0.2vw);
+	--title_size07: calc(6rem + 0.2vw);
+	--title_size08: calc(6.5rem + 0.2vw);
+	--title_size09: calc(7rem + 0.2vw);
+	--title_size10: calc(7.5rem + 0.2vw);
 	--size_rem_05: 0.5rem;
 	--size_rem_1: 1rem;
 	--size_rem_15: 1.5rem;
@@ -141,26 +79,35 @@ p {
 	--size_rem_3: 3rem;
 	--size_rem_35: 3.5rem;
 	--size_rem_4: 4rem;
+	--size_rem_45: 4.5rem;
+	--size_rem_5: 5rem;
+	--size_rem_55: 5.5rem;
+	--size_rem_6: 6rem;
+	--size_rem_65: 6.5rem;
+	--size_rem_7: 7rem;
+	--size_rem_75: 7.5rem;
+	--size_rem_8: 8rem;
+	--text_color01: rgb(225, 225, 225);
+	--bg_color01: rgb(10, 16, 29);
+	--btn_padding01: 0.6rem 0.9rem;
+	--btn_padding02: 0.8rem 1.5rem;
+	--border_color01: solid 0.2px #2325317e;
+	--box_shadow01: 0 10px 15px -3px #aaaaaa1a, 0 4px 6px -4px #e0e0e01a;
+	--font_family01: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	--font_family02: 'Roboto', sans-serif;
+	--font_family03: 'Radio Canada', sans-serif;
+	--stg_zero: 0;
+	--stg_transparent: transparent;
+}
 
+[data-theme="dark"] {
+	--text_color01: #9aaec9;
+	--text_color02: #d4d2e7;
+	--bg_color01: rgb(13, 12, 15);
 
 }
 
 [data-theme="light"] {
-	--title_size_big: calc(5rem + 0.35vw);
-	--paragraph_size_normal: calc(1.5rem + 0.3vw);
-	--text_color01: rgb(56, 56, 56);
-	--text_color02: rgb(31, 31, 31);
-	--text_color03: rgb(202, 202, 202);
-	--text_color04: rgb(54, 54, 54);
-	--background_color01: white;
-	--background_color02: white;
-	--background_color03: rgb(36, 36, 36);
-	--background_color04: white;
-	--border_color01: solid 0.2px #383838b7;
-	--border_color02: 0.5px #7070709c solid;
-	--border_color03: 0.2px #5c5c5c83 solid;
-	--border_color04: 0.5px linear-gradient(90deg, rgba(56, 189, 248, 0) 0%, rgba(56, 189, 248, 0) 0%, rgba(232, 232, 232, 0.2) 33.02%, rgba(143, 143, 143, 0.6719) 64.41%, rgba(236, 72, 153, 0) 98.93%);
-	--box_shadow: 0 10px 15px -3px #0000001a,
-		0 4px 6px -4px #e0e0e01a;
-	--scrollbar_color: #8e8e8e #ffffff;
+	--text_color01: white;
+
 }

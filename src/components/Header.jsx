@@ -4,15 +4,15 @@ import { useLocation, useNavigate } from 'react-router-dom'
 
 const Header = () => {
 	const navigate = useNavigate();
-    const location = useLocation();
-    const [activeRoute, setActiveRoute] = useState(location.pathname);
-    const [active, setActive] = useState(true);
+	const location = useLocation();
+	const [activeRoute, setActiveRoute] = useState(location.pathname);
+	const [active, setActive] = useState(true);
 
 
 	const navigation = (route) => {
-        navigate(route, { replace: true });
-        setActiveRoute(route); 
-    }
+		navigate(route, { replace: true });
+		setActiveRoute(route);
+	}
 
 	const checkLocation = location.pathname === "/showcase";
 	useEffect(() => {
@@ -29,10 +29,10 @@ const Header = () => {
 	return (
 		<>
 			<header id="header" className={` ${checkLocation ? 'bg-color04' : 'bg-transparent'} ${!active && 'scrolled'}`}>
-				<div className="global-container height-large01 flex border-btm01">
-					<div className="flex justify-spacebetween align-center h-100 w-100">
-						<div className="wrapper flex align-center justify-center colgap-small01 pointer hover01" onClick={() => navigation("/")}>
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.08 189.63">
+				<div className="global_container">
+					<nav>
+						<div className="wrapper" onClick={() => navigation("/")}>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.08 189.63" width="2rem" height="2rem">
 								<defs>
 									<linearGradient id="basic-gradient" x1="0" y1="0" x2="1" y2="1">
 										<stop offset="0%" stopColor="#3182ce" />
@@ -54,19 +54,16 @@ const Header = () => {
 							</svg>
 							<h2 className='text-mid01'>Ronan C.</h2>
 						</div>
-						<div className="wrapper flex align-center justify-center">
-							<ul className='flex colgap-small02 align-center justify-center'>
-								{/* <label htmlFor="input_search">Search</label>
-							<li><input type="search" name="" id="" />
-							</li> */}
-							     <li className={`text-small03 pointer hover01 ${activeRoute === "/components/accordion"  && 'active'}`} onClick={() => navigation("/components/accordion")}>Showcase</li>
-                                <li className={`text-small03 pointer hover01 ${activeRoute === "/work" && 'active'}`} onClick={() => navigation("/work")}>Work</li>
-                                <li className={`text-small03 pointer hover01 ${activeRoute === "/hobby"  && 'active'}`} onClick={() => navigation("/hobby")}>Hobby</li>
-                                <li className={`text-small03 pointer hover01 ${activeRoute === "/contact"  && 'active'}`} onClick={() => navigation("/contact")}>Contact</li>
-                                <li className='pointer '><DisplayMode /></li>
-							</ul>
-						</div>
-					</div>
+
+						<ul className='nav-menu'>
+							<li className='nav-link'>Showcase</li>
+							<li className='nav-link' >Work</li>
+							<li className='nav-link' >Hobby</li>
+							<li className='nav-link' >Contact</li>
+							<li className='display-mode'><DisplayMode /></li>
+						</ul>
+
+					</nav>
 				</div>
 			</header>
 		</>

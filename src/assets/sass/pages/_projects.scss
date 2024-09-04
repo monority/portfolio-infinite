@@ -1,42 +1,50 @@
-#projects{
-	.wrapper{
+#projects {
+	.wrapper {
 		display: flex;
 		flex-direction: column;
 		row-gap: var(--size_rem_1);
 	}
-	span{
+
+	span {
 		display: inline-flex;
-		column-gap:var(--size_rem_05);
+		column-gap: var(--size_rem_05);
 		padding: 0.25rem 0.6rem;
 		border-radius: var(--size_rem_05);
 	}
-	.react-span{
+
+	.react_span {
 		background-color: var(--background_color06);
-		color : var(--text_color08);
+		color: var(--text_color08);
 	}
-	.sass-span{
+
+	.sass_span {
 		color: var(--text_color07);
 		background-color: var(--background_color07);
 	}
-	.nodejs-span{
+
+	.nodejs_span {
 		color: var(--text_color09);
 		background-color: var(--background_color08);
 	}
-	.element{
+
+	.element {
 		display: flex;
 		column-gap: var(--size_rem_1);
 	}
-	.project-container{
+
+	.project-container {
 		display: flex;
 		flex-wrap: wrap;
 		gap: var(--size_rem_2);
 
 	}
-	.project-wrapper{
+
+	.project-wrapper {
 		display: flex;
 		flex-direction: column;
 		flex-basis: 39%;
-		img{
+
+		img {
 			width: 40rem;
 		}
 	}
