@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 const TypingEffect = () => {
 	const phrases = [
-		'Hello, World!',
-		'Welcome to my website.',
-		'Enjoy your stay!',
-		'Let’s build something amazing.'
+		'Inspire Designer ',
+		'Art Sensible',
+		'Intense Thinker',
+		'Passionate Worker'
 	];
 
 	const [currentText, setCurrentText] = useState('');
@@ -14,9 +14,9 @@ const TypingEffect = () => {
 	const [charIndex, setCharIndex] = useState(0);
 
 	useEffect(() => {
-		const typeSpeed = 40;
+		const typeSpeed = 60;
 		const eraseSpeed = 40;
-		const pauseTime = 1000;
+		const pauseTime = 1200;
 
 		if (isTyping) {
 			if (charIndex < phrases[phraseIndex].length) {

@@ -7,6 +7,9 @@
 	z-index: 1;
 	height: var(--size_rem_8);
 	transition: background-color 1s ease-in-out;
+	h1{
+		font-size: var(--text_size04);
+	}
 	.active{
 		transition: color 0.5s ease-in-out;
 	}
@@ -18,6 +21,10 @@
 		.nav-menu{
 			display: flex;
 			column-gap: var(--size_rem_2);
+		}
+		.nav-link{
+			font-size: var(--text_size03);
+			color : var(--text_color02);
 		}
 	}
 	.wrapper{

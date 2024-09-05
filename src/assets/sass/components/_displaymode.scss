@@ -1,6 +1,6 @@
 #display-mode{
 	.switch {
-		--secondary-container: #505050;
+		--secondary_container: #505050;
 		--primary: #e2e2e2;
 		font-size: 17px;
 		position: relative;
@@ -45,11 +45,11 @@
 	}
 	
 	input:checked+.slider {
-		background-color: var(--secondary-container);
+		background-color: var(--secondary_container);
 	}
 	
 	input:focus+.slider {
-		box-shadow: 0 0 1px var(--secondary-container);
+		box-shadow: 0 0 1px var(--secondary_container);
 	}
 	
 	input:checked+.slider:before {

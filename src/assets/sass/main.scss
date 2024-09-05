@@ -9,8 +9,8 @@
 @import './components/displaymode';
 
 section {
-	min-height: 100vh;
-	margin-top: 5rem;
+	min-height: 50vh;
+	margin-top: 10rem;
 }
 
 p {
@@ -24,6 +24,32 @@ strong {
 
 h1{
 	color : var(--text_color02);
+}
+.btn{
+	border-radius: var(--size_rem_1);
+	padding: var(--btn_padding01);
+	font-size: var(--text_size02);
+}
+.btn_design01{
+	background-color : var(--bg_color03);
+	border: var(--border_color02);
+	color : var(--text_color01);
+}
+.svg_currentColor{
+	path{
+		fill : var(--text_color01);
+		stroke : var(--text_color01);
+	}
+}
+
+.wrapper_row{
+	display: flex;
+	justify-content: space-between;
+	column-gap: var(--size_rem_1);
+}
+.wrapper_row_simple{
+	display: flex;
+	column-gap: var(--size_rem_2);
 }
 
 .global_container {

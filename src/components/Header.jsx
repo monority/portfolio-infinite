@@ -52,7 +52,7 @@ const Header = () => {
 									</g>
 								</g>
 							</svg>
-							<h2 className='text-mid01'>Ronan C.</h2>
+							<h1 className='text-mid01'>Ronan C.</h1>
 						</div>
 
 						<ul className='nav-menu'>
