@@ -7,6 +7,7 @@
 
 @import './components/header';
 @import './components/displaymode';
+@import './components/hovereffect';
 
 section {
 	min-height: 50vh;
@@ -22,32 +23,36 @@ strong {
 	font-weight: 500;
 }
 
-h1{
-	color : var(--text_color02);
+h1 {
+	color: var(--text_color02);
 }
-.btn{
+
+.btn {
 	border-radius: var(--size_rem_1);
 	padding: var(--btn_padding01);
 	font-size: var(--text_size02);
 }
-.btn_design01{
-	background-color : var(--bg_color03);
+
+.btn_design01 {
+	background-color: var(--bg_color03);
 	border: var(--border_color02);
-	color : var(--text_color01);
+	color: var(--text_color01);
 }
-.svg_currentColor{
-	path{
-		fill : var(--text_color01);
-		stroke : var(--text_color01);
+
+.svg_currentColor {
+	path {
+		fill: var(--text_color01);
+		stroke: var(--text_color01);
 	}
 }
 
-.wrapper_row{
+.wrapper_row {
 	display: flex;
 	justify-content: space-between;
 	column-gap: var(--size_rem_1);
 }
-.wrapper_row_simple{
+
+.wrapper_row_simple {
 	display: flex;
 	column-gap: var(--size_rem_2);
 }
@@ -58,3 +63,18 @@ h1{
 	max-width: 60vw;
 }
 
+.bg_color04{
+	background-color: var(--bg_color04);
+}
+.bg_color05{
+	background-color: var(--bg_color05);
+}
+.bg_color06{
+	background-color: var(--bg_color06);
+}
+.bg_color07{
+	background-color: var(--bg_color07);
+}
+.text_color01{
+	color : var(--text_color03);
+}

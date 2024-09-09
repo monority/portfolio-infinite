@@ -52,6 +52,7 @@ p {
 }
 
 :root {
+	
 	--text_size01: calc(1rem + 0.2vw);
 	--text_size02: calc(1.2rem + 0.2vw);
 	--text_size03: calc(1.4rem + 0.2vw);
@@ -95,6 +96,7 @@ p {
 	--font_family03: 'Radio Canada', sans-serif;
 	--font_family04: "Oswald", sans-serif;
 	--stg_zero: 0;
+	--stg_100 : 100%;
 	--stg_transparent: transparent;
 	--scrollbar_color: #8e8e8e #ffffff;
 }
@@ -102,11 +104,17 @@ p {
 [data-theme="dark"] {
 	--text_color01: #9aaec9;
 	--text_color02: #d4d2e7;
+	--text_color03: #242424;
 	--bg_color01: rgb(13, 12, 15);
 	--bg_color02: rgb(13, 13, 24);
 	--bg_color03: rgb(36, 36, 36);
+	--bg_color04: #177a62;
+	--bg_color05: #d8d8d8;
+	--bg_color06: #1457bb;
+	--bg_color07: #202020;
 	--border_color01: solid 0.2px #2d2f38d7;
 	--border_color02: solid 0.2px #50505079;
+	--border_color03: solid 0.2px #50505023;
 	--box_shadow01: 0 10px 15px -3px #aaaaaa13, 0 4px 6px -4px #e0e0e010;
 }
 
