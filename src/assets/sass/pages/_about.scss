@@ -128,7 +128,7 @@
 		width: var(--stg_100);
 		height: var(--stg_100);
 		border-radius: var(--size_rem_1);
-		opacity: 0.8;
+		opacity: 1;
 		object-fit: cover;
 		object-position: center;
 	}
@@ -140,7 +140,7 @@
 		height: 25rem;
 		transition: all 0.2s ease-in-out;
 		&:hover{
-			scale : (0.95);
+			scale : (0.98);
 		}
 
 	}

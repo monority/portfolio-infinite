@@ -34,7 +34,7 @@ const About = () => {
 											</svg>
 											<p>Mail</p>
 										</div>
-										<div className="box bg_color05 text_color01">
+										<div className="box bg_color05 text_color03">
 											<svg height="24" width="24" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor"
 												viewBox="0 0 512 512" xml:space="preserve">
 												=
@@ -49,14 +49,12 @@ const About = () => {
 		c0-29.874,24.212-54.096,54.078-54.096H378.4c29.876,0,54.096,24.222,54.096,54.096V386.985z"/>
 												</g>
 											</svg>
-											<p className='text_color01'>Resume</p>
+											<p className='text_color03'>Resume</p>
 										</div>
 										<div className="box bg_color06">
 											<p>Linkedin</p>
 										</div>
-										<div className="box bg_color07">
-											<p>Repositeries</p>
-										</div>
+										
 									</div>
 								</div>
 								<div className="wrapper_box">

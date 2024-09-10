@@ -41,9 +41,10 @@
 }
 
 #header.scrolled {
-	background-color: transparent;
+	background-color: var(--bg_color01);
+	border: var(--border_color02);
 	@media screen and (min-width : v.$lg-breakpoint ) {
-		background-color: var(--background_color04);
+		background-color: var(--bg_color01);
 
 		}
 

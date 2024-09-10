@@ -120,9 +120,20 @@ p {
 
 [data-theme="light"] {
 	--text_color01: rgb(40, 40, 40);
-	--text_color02: #494949;
+	--text_color02: #464646;
+	--text_color03: #0e0e0e;
+	--text_color04: #e6e6e6;
+
 	--bg_color01: white;
-	--border_color01: solid 0.2px #8386993b;
-	--box_shadow01: 0 10px 15px -3px #5757571a, 0 4px 6px -4px #4d4d4d1a;
+	--bg_color02: rgb(252, 252, 252);
+	--bg_color03: rgb(211, 211, 211);
+	--bg_color04: #46e0ba;
+	--bg_color05: #e7e7e7;
+	--bg_color06: #3586ff;
+	--bg_color07: #292929;
+	--border_color01: solid 0.2px #2d2f38d7;
+	--border_color02: solid 0.2px #50505079;
+	--border_color03: solid 0.2px #50505023;
+	--box_shadow01: 0 10px 15px -3px #aaaaaa13, 0 4px 6px -4px #e0e0e010;
 
 }

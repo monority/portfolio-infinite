@@ -42,8 +42,9 @@
 	.project-wrapper {
 		display: flex;
 		flex-direction: column;
-		flex-basis: 39%;
-
+		flex-basis: 45%;
+		background-color: var(--bg_color02);
+		border-radius: var(--size_rem_1);
 		img {
 			width: 40rem;
 		}
