@@ -1,4 +1,5 @@
-#display-mode{
+.display-mode{
+	cursor: pointer;
 	.switch {
 		--secondary_container: #505050;
 		--primary: #e2e2e2;
@@ -18,7 +19,6 @@
 	
 	.slider {
 		position: absolute;
-		cursor: pointer;
 		top: 0;
 		left: 0;
 		right: 0;

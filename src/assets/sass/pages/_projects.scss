@@ -1,52 +1,101 @@
 #projects {
-	.wrapper {
+
+	margin-top: 20rem;
+
+	.project_container {
 		display: flex;
 		flex-direction: column;
-		row-gap: var(--size_rem_1);
+		gap: var(--size_rem_2);
+
+		@media screen and (min-width : v.$lg-breakpoint ) {
+			flex-direction: row;
+		}
+	}
+
+	.project-wrapper {
+		padding: var(--size_rem_2);
+		display: flex;
+		flex-direction: column;
+		flex-basis: 25%;
+		background-color: var(--bg_color08);
+		border-radius: var(--size_rem_1);
+		border: var(--border_color03);
+		row-gap: var(--size_rem_2);
+		transition: var(--transition01);
+
+		&:hover {
+			transform: translateY(-2rem);
+		}
+	}
+
+	.element_content {
+		p {
+			color: var(--text_color01);
+		}
+	}
+
+	img {
+		width: var(--stg_100);
 	}
 
 	span {
 		display: inline-flex;
 		column-gap: var(--size_rem_05);
+		align-items: center;
 		padding: 0.25rem 0.6rem;
 		border-radius: var(--size_rem_05);
+		font-size: var(--text_size02);
 	}
 
-	.react_span {
-		background-color: var(--background_color06);
-		color: var(--text_color08);
-	}
-
-	.sass_span {
-		color: var(--text_color07);
-		background-color: var(--background_color07);
-	}
-
-	.nodejs_span {
-		color: var(--text_color09);
-		background-color: var(--background_color08);
-	}
-
-	.element {
+	.element_row {
 		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		height: var(--stg_100);
+
+	}
+
+	.element_svg {
+		display: flex;
+		align-items: center;
+	}
+
+	.element_link {
+		position: relative;
+		display: flex;
+
+		svg {
+			cursor: pointer;
+		}
+	}
+.element_glob{
+	display: flex;
+	align-items: center;
+	column-gap: var(--size_rem_1);
+}
+	.element_link p {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		white-space: nowrap;
+	}
+
+	.element_link:hover p {
+		opacity: 1;
+	}
+
+	.element_subtitle {
+		display: flex;
+		align-items: center;
 		column-gap: var(--size_rem_1);
-	}
+		color: var(--text_color03);
 
-	.project_container {
-		display: flex;
-		flex-wrap: wrap;
-		gap: var(--size_rem_2);
+		p {
+			color: var(--text_color03);
 
-	}
-
-	.project-wrapper {
-		display: flex;
-		flex-direction: column;
-		flex-basis: 45%;
-		background-color: var(--bg_color02);
-		border-radius: var(--size_rem_1);
-		img {
-			width: 40rem;
 		}
 	}
 }
