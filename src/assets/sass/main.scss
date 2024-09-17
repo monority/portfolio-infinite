@@ -4,8 +4,10 @@
 @import './pages/home';
 @import './pages/about';
 @import './pages/projects';
+@import './pages/details';
 
 @import './components/header';
+@import './components/accordion';
 @import './components/displaymode';
 @import './components/hovereffect';
 
@@ -31,12 +33,24 @@ h1 {
 	border-radius: var(--size_rem_1);
 	padding: var(--btn_padding01);
 	font-size: var(--text_size02);
+	cursor: pointer;
 }
 
 .btn_design01 {
 	background-color: var(--bg_color03);
 	border: var(--border_color02);
 	color: var(--text_color01);
+}
+
+.btn_contact{
+	background-color: var(--bg_color03);
+	border: var(--border_color02);
+	color: var(--text_color01);
+	flex: 0 1 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: var(--size_rem_1);
 }
 
 .svg_currentColor {
@@ -50,6 +64,16 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 	column-gap: var(--size_rem_1);
+}
+.wrapper_title{
+	display: flex;
+	column-gap: var(--size_rem_2);
+	align-items: center;
+	justify-content: center;
+	margin-left: 5rem;
+	h1{
+		font-size: var(--title_size01);
+	}
 }
 
 .wrapper_row_simple {

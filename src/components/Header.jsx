@@ -56,10 +56,10 @@ const Header = () => {
 						</div>
 
 						<ul className='nav-menu'>
-							<li className='nav-link'>Showcase</li>
+							<li className='nav-link'>Home</li>
 							<li className='nav-link' >Work</li>
-							<li className='nav-link' >Hobby</li>
-							<li className='nav-link' >Contact</li>
+							<li className='nav-link' >Projects</li>
+							<li className='nav-link' >About</li>
 							<li className='display-mode'><DisplayMode /></li>
 						</ul>
 

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Details from './pages/Details';
 
 const App = () => {
 //   const homeRef = useRef(null);
@@ -59,6 +60,7 @@ const App = () => {
         <Home />
         <About />
         <Projects />
+		<Details/>
 
     </>
   );

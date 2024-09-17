@@ -1,6 +1,8 @@
 import React from 'react'
 import TimePicker from '../components/TimePicker'
 import TypingEffect from '../components/TypingEffect'
+import AgeCount from '../components/AgeCount'
+
 const Home = () => {
 
 	return (
@@ -46,19 +48,18 @@ const Home = () => {
 								<div className="element">
 									<div className="element_line">
 										<div className="row_title">
-											<span>💻</span>
-											<h4>nike.com</h4></div>
+											<span>✌</span>
+											<h4>Ronan Chenu</h4></div>
 										<div className="element_text">
-											<p>Reproducting nike website</p>
+											30 years, Lille
 										</div>
-										<div className="element_sub"><p>03/09/24 - update</p>
-										</div>
+									
 									</div>
 									<hr />
 									<div className="element_line">
 										<div className="row_title">
 											<span>🎨</span>
-											<h4>Paintings</h4></div>
+											<h4>Passion</h4></div>
 										<div className="element_text">
 											<p>Colors and inspirations</p>
 										</div>
