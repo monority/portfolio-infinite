@@ -27,12 +27,14 @@
   }
   
   .accordion-body {
-	column-gap: var(--size_rem_1);
+	gap : var(--size_rem_1);
 	display: flex;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
 	padding: 0 10px;
+	flex-wrap: wrap;
+
   }
   
   .accordion-body.open {
