@@ -1,0 +1,20 @@
+#footer{
+	height: 10rem;
+	border-top: 1px solid var(--bg_color03);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.wrapper{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: var(--size_rem_1);
+		p{
+			cursor: pointer;
+			color : var(--text_color03);
+		}
+		img{
+			width: 1.5rem;
+		}
+	}
+}

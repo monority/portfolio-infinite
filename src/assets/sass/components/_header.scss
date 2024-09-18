@@ -1,51 +1,124 @@
-@use "../variables" as v;
-@import "../mixin";
-
-#header {
+header {
 	position: sticky;
 	top: 0;
-	z-index: 1;
-	height: var(--size_rem_8);
-	transition: background-color 1s ease-in-out;
-	h1{
-		font-size: var(--text_size04);
-	}
-	.active{
-		transition: color 0.5s ease-in-out;
-	}
+	left: 0;
+	width: 100%;
+	height: 8rem;
+	transition: all .2s ease-out;
+	z-index: 2;
 	nav{
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		width: 100%;
-		.nav-menu{
-			display: flex;
-			column-gap: var(--size_rem_2);
-		}
-		.nav-link{
-			font-size: var(--text_size03);
-			color : var(--text_color02);
-		}
+		justify-content: space-between;
+		height: var(--stg_100);
+	}
+	ul {
+		display: flex;
+	}
+
+	img {
+		width: calc(12rem + 3vw);
 	}
 	.wrapper{
+		cursor: pointer;
 		display: flex;
 		align-items: center;
 		column-gap: var(--size_rem_1);
 	}
+
 	.global_container{
-		height: 100%;
-		width: 100%;
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
+		width: var(--stg_100);
 	}
-}
 
-#header.scrolled {
-	background-color: var(--bg_color01);
-	border: var(--border_color02);
-	@media screen and (min-width : v.$lg-breakpoint ) {
-		background-color: var(--bg_color01);
+	.nav-item {
+		padding: 1rem;
+		cursor: pointer;
+		transition: all 1s, color 0.3s;
+	}
 
+	.list-wrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.nav-item.active {
+		p{
+		color: var(--text_color03);
+	}}
+
+
+	.nav-btn {
+		display: none;
+		background: none;
+		border: none;
+		cursor: pointer;
+		color: var(--text_color01);
+	}
+	p{
+		font-size: 1.75rem;
+	}
+
+	@media (max-width: v.$lg_breakpoint) {
+		.list-wrap {
+			position: fixed;
+			top: -100vh;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			transition: 1s all ease-in-out;
 		}
 
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			row-gap: 4rem;
+
+			li {
+				p {
+					font-size: 2.8rem;
+				}
+
+			}
+		}
+
+		.responsive-nav {
+			display: flex;
+			flex-direction: column;
+			transform: translateY(100vh);
+			height: 100vh;
+			z-index: 1;
+			background: var(--bg_faded_color01);
+		}
+
+		.nav-btn {
+			display: block;
+			top: 1rem;
+			right: 1rem;
+		}
+
+		.nav-close-btn {
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+		}
+	}
+
+}
+
+header.bg_black{
+	background-color: var(--bg_color01);
+	border-bottom : var(--border_color01);
+	height: 6rem;
+}
+header.bg_transparent{
+	background: transparent;
 }

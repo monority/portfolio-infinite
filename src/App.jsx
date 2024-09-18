@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Details from './pages/Details';
-
+import More from './pages/More'
 const App = () => {
 //   const homeRef = useRef(null);
 //   const aboutRef = useRef(null);
@@ -61,6 +61,7 @@ const App = () => {
         <About />
         <Projects />
 		<Details/>
+		<More/>
 
     </>
   );

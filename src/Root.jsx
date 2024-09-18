@@ -5,8 +5,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 
 // Components
-import Header from './components/Header'
+
 import App from './App'
+import Footer from './components/Footer'
+import Header from './components/global/Header'
 const Root = () => {
 	return (
 		<BrowserRouter>
@@ -14,6 +16,7 @@ const Root = () => {
 			<Routes>
 				<Route exact path="/" element={<App />} />
 			</Routes>
+			<Footer></Footer>
 		</BrowserRouter>
 	)
 }

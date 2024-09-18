@@ -10,6 +10,7 @@
 @import './components/accordion';
 @import './components/displaymode';
 @import './components/hovereffect';
+@import './components/footer';
 
 section {
 	min-height: 50vh;
@@ -105,3 +106,4 @@ h1 {
 .text_color04{
 	color : var(--text_color04);
 }
+

@@ -105,7 +105,8 @@ p {
 [data-theme="dark"] {
 	--text_color01: #9aaec9;
 	--text_color02: #d4d2e7;
-	--text_color03: #616161;
+	--text_color03: #646464;
+	--bg_faded_color01 : rgba(29, 29, 29, 0.95);
 	--bg_color01: rgb(13, 12, 15);
 	--bg_color02: rgb(13, 13, 24);
 	--bg_color03: #161616;
@@ -125,9 +126,10 @@ p {
 	--text_color02: #464646;
 	--text_color03: #0e0e0e;
 	--text_color04: #e6e6e6;
+	--bg_faded_color01 : rgba(224, 224, 224, 0.95);
 	--bg_color01: white;
 	--bg_color02: rgb(252, 252, 252);
-	--bg_color03: rgb(211, 211, 211);
+	--bg_color03: rgb(238, 238, 238);
 	--bg_color04: #46e0ba;
 	--bg_color05: #e7e7e7;
 	--bg_color06: #3586ff;

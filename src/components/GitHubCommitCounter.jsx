@@ -5,7 +5,7 @@ const GitHubCommitCounter = () => {
 	const [loading, setLoading] = useState(true);
 
 	const username = 'monority';
-	const token = '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';
+	const token = import.meta.env.VITE_PRIVATE_TOKEN_ID;
 
 	useEffect(() => {
 		const fetchCommits = async () => {
@@ -45,10 +45,10 @@ const GitHubCommitCounter = () => {
 	return (
 		<>
 			{loading ? (
-				<p>Loading commit data...</p>
+				<p className='text_color03'>Loading commit data...</p>
 			) : (
 				<>
-					<p>Total Commits</p>
+					<p className='text_color03'>Total Commits</p>
 					<p>{totalCommits}</p>
 				</>
 			)}
