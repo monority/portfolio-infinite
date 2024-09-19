@@ -49,26 +49,27 @@ const Home = () => {
 									<div className="element_line">
 										<div className="row_title">
 											<span>✌</span>
-											<h4>Ronan Chenu</h4></div>
+											<h4>In build</h4>
+											</div>
 										<div className="element_text">
-											30 years, Lille
+											Shop website
 										</div>
-									
+
 									</div>
 									<hr />
 									<div className="element_line">
 										<div className="row_title">
 											<span>🎨</span>
-											<h4>Passion</h4></div>
+											<h4>Speciality</h4></div>
 										<div className="element_text">
-											<p>Colors and inspirations</p>
+											<p>Front-End</p>
 										</div>
 									</div>
 									<hr />
 									<div className="element_line">
 										<div className="row_title">
 											<span>🎴</span>
-											<h4>Level-design</h4></div>
+											<h4>Favorite</h4></div>
 										<div className="element_text">
 											<p>We're making maps</p>
 										</div>

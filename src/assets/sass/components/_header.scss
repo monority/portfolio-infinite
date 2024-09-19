@@ -44,7 +44,19 @@ header {
 		align-items: center;
 		justify-content: center;
 	}
-
+	.nav-wrap{
+		display: flex;
+		align-items: center;
+		column-gap: var(--size_rem_1);
+	}
+	.submenu{
+		display: flex;
+		flex-direction: column;
+		row-gap: var(--size_rem_1);
+		position: absolute;
+		background-color: var(--bg_color03);
+		padding: var(--size_rem_1);
+	}
 	.nav-item.active {
 		p{
 		color: var(--text_color03);
