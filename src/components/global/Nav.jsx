@@ -4,7 +4,7 @@ import DisplayMode from '../DisplayMode';
 
 const Nav = () => {
 	const navRef = useRef();
-	const [activeSection, setActiveSection] = useState('');
+	const [activeSection, setActiveSection] = useState('home');
 	const sectionIds = ['home', 'about', 'projects', 'details'];
 
 	const showNavbar = () => {
@@ -13,8 +13,12 @@ const Nav = () => {
 
 	const handleScrollToSection = (id) => {
 		const section = document.getElementById(id);
+		const headerHeight = 200; 
 		if (section) {
 			section.scrollIntoView({ behavior: "smooth" });
+			const yOffset = -headerHeight; 
+			const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+			window.scrollTo({ top: y, behavior: 'smooth' });
 		}
 		if (navRef.current.classList.contains("responsive-nav")) {
 			showNavbar();
@@ -25,7 +29,7 @@ const Nav = () => {
 		let currentSection = '';
 		sectionIds.forEach((id) => {
 			const section = document.getElementById(id);
-			const offsetTop = section.offsetTop - 200; 
+			const offsetTop = section.offsetTop - 200;
 			if (window.scrollY >= offsetTop) {
 				currentSection = id;
 			}

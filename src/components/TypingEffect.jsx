@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const TypingEffect = () => {
 	const phrases = [
-		'Inspire Designer ',
+		'Inspired Designer ',
 		'Art Sensible',
 		'Intense Thinker',
 		'Passionate Worker'

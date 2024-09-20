@@ -11,6 +11,7 @@
 @import './components/displaymode';
 @import './components/hovereffect';
 @import './components/footer';
+@import './components/modal';
 
 section {
 	min-height: 50vh;
@@ -31,7 +32,7 @@ h1 {
 }
 
 .btn {
-	border-radius: var(--size_rem_1);
+	border-radius: var(--size_rem_05);
 	padding: var(--btn_padding01);
 	font-size: var(--text_size02);
 	cursor: pointer;
@@ -43,6 +44,17 @@ h1 {
 	color: var(--text_color01);
 }
 
+.btn_validation{
+	background-color: var(--bg_color04);
+	border: var(--border_color04);
+	color:var(--text_color02);
+
+}
+.btn_cancel{
+	background-color: var(--bg_color09);
+	border: var(--border_color03);
+	color:var(--text_color02);
+}
 .btn_contact{
 	background-color: var(--bg_color03);
 	border: var(--border_color02);

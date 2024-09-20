@@ -51,7 +51,7 @@ const Details = () => {
 
 						</div>
 						<div className="wrapper_img">
-							<img src="/example.webp" alt="" />
+							<img src="/monority.svg" alt="" />
 						</div>
 					</div>
 
