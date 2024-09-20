@@ -26,7 +26,6 @@ body {
 	word-spacing: 0.2px;
 	tab-size: 4;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 }
 
@@ -50,6 +49,17 @@ p {
 	padding: var(--stg_zero);
 
 }
+
+@font-face {
+	font-family: "Inter";
+	src: url("/Inter.woff") format('woff');
+  }
+  
+  @font-face {
+	font-family: "Inter";
+	src: url("/Inter.woff2") format('woff2');
+  }
+  
 
 :root {
 
