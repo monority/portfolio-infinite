@@ -108,9 +108,10 @@
 		.box {
 			cursor: pointer;
 			display: flex;
+			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			column-gap: var(--size_rem_1);
+			row-gap: var(--size_rem_1);
 			flex-basis: 49%;
 			border-radius: var(--size_rem_1);
 			position: relative;
