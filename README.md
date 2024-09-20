@@ -1,7 +1,7 @@
 
 # Portfolio
 
-Portfolio created with ViteJS. 2024.
+Portfolio created with ViteJS.
 
 [Website Link](https://ronanchenu.vercel.app)
 
