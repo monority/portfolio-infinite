@@ -29,7 +29,7 @@ const Nav = () => {
 		let currentSection = '';
 		sectionIds.forEach((id) => {
 			const section = document.getElementById(id);
-			const offsetTop = section.offsetTop - 200;
+			const offsetTop = section.offsetTop - 300;
 			if (window.scrollY >= offsetTop) {
 				currentSection = id;
 			}
