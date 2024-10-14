@@ -70,7 +70,7 @@ const About = () => {
 							</div>
 							<div className="wrapper">
 								<div className="figure_image" onClick={() => window.open("https://gamebanana.com/members/1448278")}>
-									<img src="pure.jpg" alt="" className='img_full' />
+									<img src="pure.png" alt="" className='img_full' />
 									<div className="figcaption">
 										<svg version="1.1" id="Calque_3" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3rem" height="3rem" className='svg_position_right'
 											viewBox="0 0 512 512" xmlSpace="preserve">
@@ -196,14 +196,14 @@ const About = () => {
 
 								<div className="element">
 									<div className="figure_image" onClick={() => window.open("https://iej-nouvelles-images.itch.io/rezan")}>
-										<img src="Rezan.jpg" className="img_full" alt="" />
+										<img src="Rezan.png" className="img_full" alt="" />
 										<div className="figcaption">
 											<p>Rezan Game</p>
 										</div>
 									</div>
 
 									<div className="figure_image " onClick={() => window.open("https://morganiste.itch.io/grallaxy")}>
-										<img src="Grallaxy.jpg" className="img_full " alt="" />
+										<img src="Grallaxy.png" className="img_full " alt="" />
 										<div className="figcaption">
 											<p>Grallaxy</p>
 										</div>
