@@ -8,7 +8,7 @@ const About = () => {
 		name: '',
 		message: ''
 	});
-	const [status, setStatus] = useState(null);
+	const [status, setStatus] = useState();
 
 	const handleInputChange = (e) => {
 		const { name, value } = e.target;
