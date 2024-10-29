@@ -84,7 +84,7 @@
 		width: var(--stg_100);
 		height: var(--stg_100);
 		overflow: hidden;
-		opacity: 0.2;
+		opacity: 0.6;
 		filter: blur(0.2rem);
 	}
 
@@ -114,6 +114,7 @@
 			row-gap: var(--size_rem_1);
 			flex-basis: 49%;
 			border-radius: var(--size_rem_1);
+			border : var(--border_color05);
 			position: relative;
 			transition: all 0.2s ease-in-out;
 

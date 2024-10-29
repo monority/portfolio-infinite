@@ -21,9 +21,7 @@ const AgeCount = () => {
 
 	return (
 		<>
-
-			<span id="age">{age}</span>
-
+			<p id="age">{age}</p>
 		</>
 	);
 };
