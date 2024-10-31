@@ -15,7 +15,7 @@
 		gap:var(--size_rem_2);
 	}
 	form{
-		width: 40vw;
+		min-width: 40vw;
 		background-color: var(--bg_color03);
 		padding: var(--size_rem_4);
 		border-radius: var(--size_rem_2);
