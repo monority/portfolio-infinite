@@ -1,17 +1,17 @@
 @use "reset";
 @use "variables" as v;
-@import "mixin";
-@import './pages/home';
-@import './pages/about';
-@import './pages/projects';
-@import './pages/details';
+@use "mixin";
+@use './pages/home';
+@use './pages/about';
+@use './pages/projects';
+@use './pages/details';
 
-@import './components/header';
-@import './components/accordion';
-@import './components/displaymode';
-@import './components/hovereffect';
-@import './components/footer';
-@import './components/modal';
+@use './components/header';
+@use './components/accordion';
+@use './components/displaymode';
+@use './components/hovereffect';
+@use './components/footer';
+@use './components/modal';
 
 section {
 	min-height: 50vh;
