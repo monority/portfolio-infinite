@@ -9,7 +9,7 @@ const GitHubCommitCounter = () => {
 
 	useEffect(() => {
 		const fetchCommits = async () => {
-			let total = 0;
+			let total = 0;                
 			setLoading(true);
 
 			try {
