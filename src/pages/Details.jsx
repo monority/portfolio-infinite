@@ -2,9 +2,10 @@ import React from 'react'
 import Accordion from '../components/Accordion'
 import GitHubCommitCounter from '../components/GitHubCommitCounter';
 import AgeCount from '../components/AgeCount';
+import TimeDifference from '../components/DateCalculator';
 
 const Details = () => {
-	
+	const targetDate = "2023-02-18"; 
 	return (
 		<>	<section id="details" className='layout_container'>
 			<div className="global_container">
@@ -31,11 +32,11 @@ const Details = () => {
 							<div className="wrapper_box">
 								<div className="element_box">
 									<p className='text_color03'>Age</p>
-									<AgeCount></AgeCount>
+									<AgeCount/>
 								</div>
 								<div className="element_box">
-									<p className='text_color03'>Year of dev</p>
-									<p>1</p>
+									<p className='text_color03'>Years of dev</p>
+									<p>  <TimeDifference startDate={targetDate} /></p>
 								</div>
 							</div>
 							<div className="wrapper_box">
@@ -44,8 +45,8 @@ const Details = () => {
 									<p>1</p>
 								</div>
 								<div className="element_box">
-								
-									<GitHubCommitCounter></GitHubCommitCounter>
+		
+									<GitHubCommitCounter/>
 								</div>
 							</div>
 
