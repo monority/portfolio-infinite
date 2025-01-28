@@ -1,6 +1,6 @@
 import React from 'react'
 import Accordion from '../components/Accordion'
-import { CSharpSVG, FirebaseSVG } from '../components/svg/Svg';
+import { CSharpSVG, FirebaseSVG } from '../components/svg/SVGStack';
 
 const More = () => {
 	const items = [

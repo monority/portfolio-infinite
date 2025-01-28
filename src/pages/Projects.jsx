@@ -1,6 +1,6 @@
 import React from 'react'
-import { ReactSVG, SassSVG, WebSVG, NodeJsSVG, PHPSVG, MongoSVG, AntSVG, DetailsSVG, FirebaseSVG, SQLSVG } from '../components/svg/Svg.Jsx'
-import { RepoSVG } from '../components/svg/Svg.Jsx'
+import { ReactSVG, SassSVG, WebSVG, NodeJsSVG, PHPSVG, MongoSVG, AntSVG, DetailsSVG, FirebaseSVG, SQLSVG } from '../components/svg/SVGStack'
+import { RepoSVG } from '../components/svg/SVGStack'
 const Projects = () => {
 	return (
 		<>
